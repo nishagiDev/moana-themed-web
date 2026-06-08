@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moana Fan Hub</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+
+<header class="hero">
+
+<div class="hero-overlay"></div>
+
+<nav>
+<div class="logo">🌊 MOANA FAN HUB</div>
+
+<ul>
+<li><a href="#story">Story</a></li>
+<li><a href="#characters">Characters</a></li>
+<li><a href="#music">Music</a></li>
+<li><a href="#world">World</a></li>
+</ul>
+</nav>
+
+<div class="hero-content">
+
+<div>
+<h1>The Ocean Calls</h1>
+
+<p>
+Explore the world of Moana, the fearless voyager who
+followed the ocean beyond the reef.
+</p>
+
+<div class="buttons">
+<a href="#characters" class="btn-primary">Meet The Crew</a>
+<a href="#story" class="btn-secondary">Explore</a>
+</div>
+</div>
+
+<lottie-player
+src="https://assets10.lottiefiles.com/packages/lf20_kdx6cani.json"
+background="transparent"
+speed="1"
+loop
+autoplay>
+</lottie-player>
+
+</div>
+
+</header>
+
+<section id="story" class="section">
+
+<h2>Beyond The Reef</h2>
+
+<p class="center">
+Moana tells the story of a courageous Polynesian navigator
+who embarks on a journey across the ocean to save her island
+and rediscover her people's voyaging heritage.
+</p>
+
+</section>
+
+<section id="characters" class="section">
+
+<h2>Characters</h2>
+
+<div class="carousel-wrapper">
+
+<button class="arrow" onclick="scrollGallery(-1)">‹</button>
+
+<div class="carousel" id="carousel">
+
+<div class="card">
+<h3>Moana</h3>
+<p>
+A determined voyager chosen by the ocean.
+Brave, curious and compassionate.
+</p>
+</div>
+
+<div class="card">
+<h3>Maui</h3>
+<p>
+A legendary demigod with magical powers
+and a larger-than-life personality.
+</p>
+</div>
+
+<div class="card">
+<h3>Hei Hei</h3>
+<p>
+The lovable and chaotic rooster who
+accidentally joins the adventure.
+</p>
+</div>
+
+<div class="card">
+<h3>Pua</h3>
+<p>
+Moana's loyal pet pig and one of the
+most beloved characters.
+</p>
+</div>
+
+<div class="card">
+<h3>Tala</h3>
+<p>
+Moana's wise grandmother who inspires
+her to follow her destiny.
+</p>
+</div>
+
+</div>
+
+<button class="arrow" onclick="scrollGallery(1)">›</button>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="stat">
+<h3>2016</h3>
+<p>Movie Release</p>
+</div>
+
+<div class="stat">
+<h3>95%</h3>
+<p>Audience Love</p>
+</div>
+
+<div class="stat">
+<h3>Ocean</h3>
+<p>Main Companion</p>
+</div>
+
+<div class="stat">
+<h3>∞</h3>
+<p>Adventure</p>
+</div>
+
+</section>
+
+<section id="music" class="section">
+
+<h2>Memorable Songs</h2>
+
+<div class="music-grid">
+
+<div class="music-card">
+<h3>How Far I'll Go</h3>
+<p>
+Moana's iconic song about discovering her purpose.
+</p>
+</div>
+
+<div class="music-card">
+<h3>You're Welcome</h3>
+<p>
+Maui's energetic and hilarious musical performance.
+</p>
+</div>
+
+<div class="music-card">
+<h3>We Know The Way</h3>
+<p>
+A celebration of Polynesian navigation traditions.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="world" class="section">
+
+<h2>The World of Motunui</h2>
+
+<p class="center">
+Beautiful oceans, tropical islands, ancient navigation,
+mythology and exploration make Moana one of Disney's
+most visually stunning adventures.
+</p>
+
+</section>
+
+<footer>
+
+<h3>Moana Fan Hub</h3>
+
+<p>
+Unofficial fan website created for educational and fandom purposes.
+Not affiliated with Disney.
+</p>
+
+</footer>
+
+<script>
+function scrollGallery(direction){
+const carousel = document.getElementById("carousel");
+carousel.scrollBy({
+left: direction * 350,
+behavior: "smooth"
+});
+}
+</script>
+
+</body>
+</html>
